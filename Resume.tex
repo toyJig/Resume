@@ -1,0 +1,117 @@
+\documentclass[11pt]{article}       % set main text size
+\usepackage[letterpaper,                % set paper size to letterpaper. change to a4paper for resumes outside of North America
+top=0.5in,                          % specify top page margin
+bottom=0.5in,                       % specify bottom page margin
+left=0.5in,                         % specify left page margin
+right=0.5in]{geometry}              % specify right page margin
+                       
+% \usepackage{XCharter}               % set font. comment this line out if you want to use the default LaTeX font Computer Modern
+\usepackage[T1]{fontenc}            % output encoding
+\usepackage[utf8]{inputenc}         % input encoding
+\usepackage{enumitem}               % enable lists for bullet points: itemize and \item
+\usepackage[hidelinks]{hyperref}    % format hyperlinks
+\usepackage{titlesec}               % enable section title customization
+\raggedright                        % disable text justification
+\pagestyle{empty}                   % disable page numbering
+
+% ensure PDF output will be all-Unicode and machine-readable
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% format section headings: bolding, size, white space above and below
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule\vspace{-6.5pt}]
+
+% format bullet points: size, white space above and below, white space between bullets
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\setlist[itemize]{itemsep=-2pt, leftmargin=12pt, topsep=7pt} %%% Test various topsep values to fix vertical spacing errors
+
+% resume starts here
+\begin{document}
+
+% name
+\centerline{\Huge \textbf{Henry Chen}}
+
+\vspace{5pt}
+
+% contact information
+% \centerline{+1 (339) 229-3992 | \href{mailto:henry01890@gmail.com}{\underline{henry01890@gmail.com}} | \href{linkedin.com/in/henry-chen-ece}{\underline{linkedin.com/in/henry-chen-ece}}}
+\centerline{\href{mailto:henry01890@gmail.com}{\underline{henry01890@gmail.com}} | \href{linkedin.com/in/henry-chen-ece}{\underline{linkedin.com/in/henry-chen-ece}} | +1 (339) 229-3992}
+\centerline{\textbf{Available to work for 14 weeks during summer 2027}}
+
+\vspace{-14pt}
+
+% skills section
+\section*{Skills}
+\textbf{Programming Languages:} C, C++, Java, Javascript, HTML/CSS, Python, Lua  \\
+\textbf{Tools:} Programming Software (Git, VSCode, Arduino IDE, Vim), 3D Modeling Software (OnShape, Blender); Adobe Products (After Effects, Premiere Pro), MS Office Suite
+
+\vspace{-6.5pt}
+
+% experience section
+\section*{Experience}
+\textbf{Science Olympiad} | Git, C++, CMake, Soldering, KiCAD\hfill \textit{Sep. 2024 – May 2026}\\
+\vspace{-1pt}
+\textit{A Team Competitor \& Build Leader}    \hfill \textit{Winchester High School | Winchester, MA}\\
+\vspace{-5pt}
+\begin{itemize}
+  \item Took initiative in a failing event (Robot Tour), jumping from a consistent sub-25th place to 5th place overnight.
+  \item Designed and 3D printed a 2-wheel driven robot in Onshape, going through 20+ iterations.
+  \item Self-learned C++ and CMake, implementing PID-based pathing.
+  \item Produced and soldered a custom PCB, with a Raspberry Pi Pico MCU and Adafruit BNO055 IMU.
+  \item Became the 1st in the town of Winchester to ever place 1st in an event at the prestigious MIT invitational.
+\end{itemize}
+
+\textbf{Game Development} | Lua, Java, Javascript, HTML/CSS, Python\hfill \textit{Oct. 2023 – Present}\\
+\vspace{-1pt}
+\textit{Sole Proprietor}
+\vspace{-5pt}
+\begin{itemize}
+  \item Implemented inverse kinematics, procedural generation, and custom 3D models to maximize user experience.
+  \item Constructed Zero Trust Architectures between clients and servers to prevent exploiters.
+  \item Researched network optimizations, reducing bandwidth consumption across projects by 95%.
+  \item Attracted 10 million+ plays worldwide by promoting self-expression through animations.
+  \item Received awards for 1 million+ MAU while sparking a social trend with 200 million+ views across platforms.
+\end{itemize}
+
+\textbf{Combat Robotics Club} | Verilog, OnShape, Autodesk Fusion, MS Office Suite\hfill \textit{Sep. 2025 – May. 2026}\\
+\vspace{-1pt}
+\textit{Treasurer \& Officer}    \hfill \textit{Winchester High School | Winchester, MA}\\
+\vspace{-5pt}
+\begin{itemize}
+  \item Led outreach, raising over 1k USD, a $\sim$70\% increase from the previous year.
+  \item Guided peers to place 3rd nationally, outplacing MIT at the National Havoc Robot League with a bootstrap budget.
+\end{itemize}
+
+\textbf{UGC Sales} | After Effects, Premiere Pro, Blender, Social Media\hfill \textit{Oct. 2025 – Present}\\
+\vspace{-1pt}
+\textit{Sole Proprietor}
+\vspace{-5pt}
+\begin{itemize}
+  \item Modeled and animated user-generated content for digital sales while handling social media promotion, achieving 150,000+ global sales to date.
+  \item Sponsored by \textit{Meta Platforms, Inc.} and honored in YouTube \& Roblox Collaboration celebrating 1 billion Roblox views on YouTube.
+  \item Amassed 2 million+ subscribers across multiple channels, fostering a community catered towards young audiences.
+\end{itemize}
+
+% \section*{Projects}
+% \begin{itemize}
+%   \item \textbf{QuantSoftware Toolkit:} Open source Python library for data analysis and machine learning for finance
+%   \item \textbf{GitHub Visualization:} Data visualization of Git Log data using D3 to analyze project trends over time
+%   \item \textbf{Recommendation System:} Music and movie recommender systems using collaborative filtering on public datasets
+%   \item \textbf{Mac Setup:} Book that gives step by step instructions on setting up developer environment on Mac OS
+% \end{itemize}
+
+% \vspace{-18.5pt}
+
+% education section
+\section*{Education}
+\textbf{University of Massachusetts Amherst} -- Bachelor of Science in Computer Engineering\hfill \textit{May 2030} \\
+\vspace{5pt}
+\textbf{Winchester High School} -- High School Diploma\hfill \textit{Jun. 2026} \\
+\vspace{-5pt}
+\begin{itemize}
+  \item \textbf{GPA: 3.9/4.0; SAT: 1530;} Computer Science Club; Cross Country Varsity
+  \item \textbf{14 AP Courses (5 || 4):} Comp Sci. Principles; Comp Sci. A; Statistics; Environmental Science; Chemistry; Biology; English Language \& Composition; English Literature \& Composition; Physics 1, Spanish Language \& Culture; Macroeconomics; Microeconomics; Calculus BC; Physics C: Mechanics.
+\end{itemize}
+
+\vspace{5pt}
+\end{document}
